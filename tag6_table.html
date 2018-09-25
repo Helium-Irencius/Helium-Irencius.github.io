@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Table</title>
+    
+    <style>
+        table {
+            background-color:tomato;
+            
+            color: tomato;
+           border-color: tomato;
+            border-collapse: collapse
+        }    
+        
+        td,th {
+            padding: 5px 10px;
+            background-color: black;
+           border-collapse: collapse;
+        }
+        
+        td {
+            color: lime;
+            transition: all 1s linear;
+            position: relative;
+            left: 0;
+        }
+        
+        td:hover {
+            color: red;
+            left: 100px;
+        }
+        
+    </style>
+</head>
+<body>
+   <table>
+       <tr>
+           <td></td>
+           <td></td>
+       </tr>
+       <tr>
+           <td></td>
+           <td></td>
+       </tr>
+       <tr>
+           <td></td>
+           <td></td>
+       </tr>
+       <tr>
+           <td></td>
+           <td></td>
+       </tr>
+   </table>
+    <table border>
+        <tr>
+            <th>Name</th>
+            <th>Phone</th>
+        </tr>
+        <tr>
+            <td rowspan="2">Tom</td>
+            <td>111-111-1111</td>
+        </tr>
+        <tr>
+           
+            <td>333-333-3333</td>
+        </tr>
+        <tr>
+            <td colspan="2">Jiaqi</td>
+            <td>555-555-5555</td>
+        </tr>
+    </table>
+    
+</body>
+</html>

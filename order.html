@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Order</title>
+    <style>
+        img{
+            width: 20%;
+            padding: 10px
+            
+        }
+
+        details{
+            max-width: 100%;
+        }
+         nav ul li {
+            display: inline-block;
+            padding-left: 10px;
+ 
+        } 
+        div{
+            display: inline-block
+        }
+        
+        fieldset,legend {
+            border-style: ridge;
+            border-radius: 5px;
+            border-width: 10px;
+            border-color: darkblue;
+            background-color: coral
+        }
+        
+        #EndButton{
+            background-color: green;
+            color: white;
+            padding: 10px;
+        }
+  
+        .FoodContent{
+          padding: 10px;
+        }
+        
+        body{
+            background-color: aqua
+        }
+        
+        placeholder {
+            background-color:darkblue
+        }
+        .numberofitems{
+            padding-left: 10px;
+            width: 21%;
+        }
+       .dropbutton {
+    background-color: green;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+
+.dropdown {
+    display: inline-block;
+}
+
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 200px;
+  
+}
+
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+
+.dropdown-content a:hover {background-color: floralwhite}
+
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: darkgreen;
+}
+
+
+    </style>
+</head>
+<body>
+  <form action="anyServerResource.php" method="">
+  <h1>Your Order</h1>
+ <fieldset>
+     <legend>Order</legend>
+
+    <header>
+    <nav>
+        <ul>
+            <li> 
+        
+        <div>
+         <div class="dropdown">
+  <button class="dropbutton">Food</button>
+  <div class="dropdown-content">
+  
+     
+       <div class="FoodContent">
+       <details>
+        
+        
+        <summary>Burgers</summary>
+      
+           
+           <img src="http://i0.kym-cdn.com/photos/images/newsfeed/000/096/044/trollface.jpg?1296494117" alt="">
+ 
+   
+         
+  <img src="http://i0.kym-cdn.com/photos/images/newsfeed/000/096/044/trollface.jpg?1296494117" alt="">
+      
+ <img src="http://i0.kym-cdn.com/photos/images/newsfeed/000/096/044/trollface.jpg?1296494117" alt="">
+  
+  <img src="http://i0.kym-cdn.com/photos/images/newsfeed/000/096/044/trollface.jpg?1296494117" alt="">
+   <hr>
+   
+   
+ <input class="numberofitems" min=0 max=10 type="number" placeholder="Cheese Burgers">
+ <input class="numberofitems" min=0 max=10 type="number" placeholder="Bacon Burgers">
+ <input class="numberofitems" min=0 max=10 type="number" placeholder="Double Burgers">
+ <input class="numberofitems" min=0 max=10 type="number" placeholder="Normal Burgers">
+
+ 
+    
+    </details>
+   
+  
+    
+   <details>
+        
+        
+        <summary>Pizzas</summary>
+      
+           
+           <img src="http://i0.kym-cdn.com/photos/images/newsfeed/000/096/044/trollface.jpg?1296494117" alt="">
+ 
+   
+         
+  <img src="http://i0.kym-cdn.com/photos/images/newsfeed/000/096/044/trollface.jpg?1296494117" alt="">
+      
+ <img src="http://i0.kym-cdn.com/photos/images/newsfeed/000/096/044/trollface.jpg?1296494117" alt="">
+   <hr>
+  <input class="numberofitems" min=0 max=10 type="number" placeholder="Cheese Pizza">
+ <input class="numberofitems" min=0 max=10 type="number" placeholder="Pepperoni Pizza">
+ <input class="numberofitems" min=0 max=10 type="number" placeholder="Mushroom Pizza">
+
+ 
+ 
+    
+    </details>
+    
+    <details>
+        
+        
+        <summary>Chicken</summary>
+      
+           
+           <img src="http://i0.kym-cdn.com/photos/images/newsfeed/000/096/044/trollface.jpg?1296494117" alt="">
+ 
+   
+         
+  <img src="http://i0.kym-cdn.com/photos/images/newsfeed/000/096/044/trollface.jpg?1296494117" alt="">
+      
+ <img src="http://i0.kym-cdn.com/photos/images/newsfeed/000/096/044/trollface.jpg?1296494117" alt="">
+  
+  <img src="http://i0.kym-cdn.com/photos/images/newsfeed/000/096/044/trollface.jpg?1296494117" alt="">
+ <hr>
+  <input class="numberofitems" min=0 max=10 type="number" placeholder="Full Chicken">
+ <input class="numberofitems" min=0 max=10 type="number" placeholder="Full Turkey">
+ <input class="numberofitems" min=0 max=10 type="number" placeholder="Chicken Wings">
+  <input class="numberofitems" min=0 max=10 type="number" placeholder="Chicken Nuggets">
+   
+    <hr>
+         
+  <img src="http://i0.kym-cdn.com/photos/images/newsfeed/000/096/044/trollface.jpg?1296494117" alt="">
+      
+ <img src="http://i0.kym-cdn.com/photos/images/newsfeed/000/096/044/trollface.jpg?1296494117" alt="">
+   <hr>
+   
+   
+ 
+ <input class="numberofitems" min=0 max=10 type="number" placeholder="Chicken Soup">
+ <input class="numberofitems" min=0 max=10 type="number" placeholder="Fried Chicken Wings">
+           </details>
+
+<details>
+ <summary>Eggs</summary>
+      
+           
+           <img src="http://i0.kym-cdn.com/photos/images/newsfeed/000/096/044/trollface.jpg?1296494117" alt="">
+ 
+   
+         
+  <img src="http://i0.kym-cdn.com/photos/images/newsfeed/000/096/044/trollface.jpg?1296494117" alt="">
+      
+ <img src="http://i0.kym-cdn.com/photos/images/newsfeed/000/096/044/trollface.jpg?1296494117" alt="">
+   <hr>
+   
+   
+ <input class="numberofitems" min=0 max=10 type="number" placeholder="Fried Eggs">
+ <input class="numberofitems" min=0 max=10 type="number" placeholder="Sunnyside-Up">
+ <input class="numberofitems" min=0 max=10 type="number" placeholder="Scrambled Egg">
+    
+    </details>
+    
+    <details>
+ <summary>Rice/Noodles</summary>
+      
+           
+           <img src="http://i0.kym-cdn.com/photos/images/newsfeed/000/096/044/trollface.jpg?1296494117" alt="">
+ 
+   
+         
+  <img src="http://i0.kym-cdn.com/photos/images/newsfeed/000/096/044/trollface.jpg?1296494117" alt="">
+      
+ <img src="http://i0.kym-cdn.com/photos/images/newsfeed/000/096/044/trollface.jpg?1296494117" alt="">
+   <hr>
+   
+   
+ <input class="numberofitems" min=0 max=10 type="number" placeholder="Rice">
+ <input class="numberofitems" min=0 max=10 type="number" placeholder="Rice and Meat">
+ <input class="numberofitems" min=0 max=10 type="number" placeholder="Noodles(Hot)">
+ <input class="numberofitems" min=0 max=10 type="number" placeholder="Diffrent Hot Noodle">
+    
+    </details>
+    
+    <details>
+        <summary>Pig Products</summary>
+          <img src="http://i0.kym-cdn.com/photos/images/newsfeed/000/096/044/trollface.jpg?1296494117" alt="">
+ 
+   
+         
+  <img src="http://i0.kym-cdn.com/photos/images/newsfeed/000/096/044/trollface.jpg?1296494117" alt="">
+      
+ <img src="http://i0.kym-cdn.com/photos/images/newsfeed/000/096/044/trollface.jpg?1296494117" alt="">
+       <hr>
+        <input class="numberofitems" min=0 max=10 type="number" placeholder="Porkchop">
+        <input class="numberofitems" min=0 max=10 type="number" placeholder="Bacon Strips">
+        <input class="numberofitems" min=0 max=10 type="number" placeholder="Pig Trotters">
+        <input class="numberofitems" min=0 max=10 type="number" placeholder="Pig Ribs">
+        
+    </details>
+    
+    <details>
+        <img src="http://i0.kym-cdn.com/photos/images/newsfeed/000/096/044/trollface.jpg?1296494117" alt="">
+        <summary>Cow Products</summary>
+        <hr>
+        <input class="numberofitems" min=0 max=10 type="number" placeholder="Steak">
+    </details>
+     </div>
+    
+  </div>
+</div>  
+           
+            
+             
+              
+               
+                 <div class="dropdown">
+  <button class="dropbutton">Drinks</button>
+  <div class="dropdown-content">
+  <div class="FoodContent">
+       <details>
+        
+        
+        <summary>Smothies</summary>
+      
+           
+           <img src="http://i0.kym-cdn.com/photos/images/newsfeed/000/096/044/trollface.jpg?1296494117" alt="">
+ 
+   
+         
+  <img src="http://i0.kym-cdn.com/photos/images/newsfeed/000/096/044/trollface.jpg?1296494117" alt="">
+      
+ <img src="http://i0.kym-cdn.com/photos/images/newsfeed/000/096/044/trollface.jpg?1296494117" alt="">
+   <hr>
+   
+   
+ <input class="numberofitems" min=0 max=10 type="number" placeholder="Strawberry">
+ <input class="numberofitems" min=0 max=10 type="number" placeholder="Banana">
+ <input class="numberofitems" min=0 max=10 type="number" placeholder="Blueberry">
+ <hr>
+      <img src="http://i0.kym-cdn.com/photos/images/newsfeed/000/096/044/trollface.jpg?1296494117" alt="">
+ 
+   
+         
+  <img src="http://i0.kym-cdn.com/photos/images/newsfeed/000/096/044/trollface.jpg?1296494117" alt="">
+      
+ <img src="http://i0.kym-cdn.com/photos/images/newsfeed/000/096/044/trollface.jpg?1296494117" alt="">
+ <hr>
+<input class="numberofitems" min=0 max=10 type="number" placeholder="Rasberry">
+<input class="numberofitems" min=0 max=10 type="number" placeholder="Rasberry/Blueberry">
+<input class="numberofitems" min=0 max=10 type="number" placeholder="Strawberry/Banana">
+ 
+    
+    </details>
+   
+  
+    
+   <details>
+        
+        
+        <summary>Soft Drinks</summary>
+      
+           
+           <img src="http://i0.kym-cdn.com/photos/images/newsfeed/000/096/044/trollface.jpg?1296494117" alt="">
+ 
+   
+         
+  <img src="http://i0.kym-cdn.com/photos/images/newsfeed/000/096/044/trollface.jpg?1296494117" alt="">
+      
+ <img src="http://i0.kym-cdn.com/photos/images/newsfeed/000/096/044/trollface.jpg?1296494117" alt="">
+  
+    <img src="http://i0.kym-cdn.com/photos/images/newsfeed/000/096/044/trollface.jpg?1296494117" alt="">
+      
+
+  
+   <hr>
+  <input class="numberofitems" min=0 max=10 type="number" placeholder="Coke">
+ <input class="numberofitems" min=0 max=10 type="number" placeholder="Sprite">
+ <input class="numberofitems" min=0 max=10 type="number" placeholder="Diet Coke">
+<input class="numberofitems" min=0 max=10 type="number" placeholder="Gingerabre">
+ <hr>
+  <img src="http://i0.kym-cdn.com/photos/images/newsfeed/000/096/044/trollface.jpg?1296494117" alt="">
+  <hr>
+  <input class="numberofitems" min=0 max=10 type="number" placeholder="Pepsi">
+ 
+    
+    </details>
+    
+        <details>
+        
+        
+        <summary>Juices</summary>
+      
+           
+           <img src="http://i0.kym-cdn.com/photos/images/newsfeed/000/096/044/trollface.jpg?1296494117" alt="">
+ 
+   
+         
+  <img src="http://i0.kym-cdn.com/photos/images/newsfeed/000/096/044/trollface.jpg?1296494117" alt="">
+      
+ <img src="http://i0.kym-cdn.com/photos/images/newsfeed/000/096/044/trollface.jpg?1296494117" alt="">
+   <hr>
+   
+   
+ <input class="numberofitems" min=0 max=10 type="number" placeholder="Orange Juice">
+ <input class="numberofitems" min=0 max=10 type="number" placeholder="Apple Juice">
+ <input class="numberofitems" min=0 max=10 type="number" placeholder="Grape Juice">
+
+
+ 
+    
+    </details>
+    
+        <details>
+        
+        
+        <summary>Alchoholic Drinks</summary>
+      
+           
+           <img src="http://i0.kym-cdn.com/photos/images/newsfeed/000/096/044/trollface.jpg?1296494117" alt="">
+ 
+   
+         
+  <img src="http://i0.kym-cdn.com/photos/images/newsfeed/000/096/044/trollface.jpg?1296494117" alt="">
+      
+ <img src="http://i0.kym-cdn.com/photos/images/newsfeed/000/096/044/trollface.jpg?1296494117" alt="">
+   <hr>
+   
+   
+ <input class="numberofitems" min=0 max=10 type="number" placeholder="Beer">
+ <input class="numberofitems" min=0 max=10 type="number" placeholder="Wine">
+ <input class="numberofitems" min=0 max=10 type="number" placeholder="Red Wine">
+
+
+ 
+    
+    </details>
+    
+    <details>
+        
+        
+        <summary>Other</summary>
+      
+           
+           <img src="http://i0.kym-cdn.com/photos/images/newsfeed/000/096/044/trollface.jpg?1296494117" alt="">
+ 
+   
+         
+  <img src="http://i0.kym-cdn.com/photos/images/newsfeed/000/096/044/trollface.jpg?1296494117" alt="">
+      
+ <img src="http://i0.kym-cdn.com/photos/images/newsfeed/000/096/044/trollface.jpg?1296494117" alt="">
+   <hr>
+   
+   
+ <input class="numberofitems" min=0 max=10 type="number" placeholder="Water">
+ <input class="numberofitems" min=0 max=10 type="number" placeholder="Milk">
+ <input class="numberofitems" min=0 max=10 type="number" placeholder="Coffee">
+
+
+ 
+    
+    </details>
+    
+   
+    
+     </div>
+    
+  </div>
+</div>  
+           
+           
+           
+           
+           
+           
+           
+           <div class="dropdown">
+  <button class="dropbutton">Deserts</button>
+  <div class="dropdown-content">
+    <div class="FoodContent">
+       <details>
+        
+        
+        <summary>Cakes</summary>
+      
+           
+           <img src="http://i0.kym-cdn.com/photos/images/newsfeed/000/096/044/trollface.jpg?1296494117" alt="">
+ 
+   
+         
+  <img src="http://i0.kym-cdn.com/photos/images/newsfeed/000/096/044/trollface.jpg?1296494117" alt="">
+      
+ <img src="http://i0.kym-cdn.com/photos/images/newsfeed/000/096/044/trollface.jpg?1296494117" alt="">
+   <hr>
+   
+   
+ <input class="numberofitems" min=0 max=10 type="number" placeholder="Chocolate">
+ <input class="numberofitems" min=0 max=10 type="number" placeholder="Cupcake">
+ <input class="numberofitems" min=0 max=10 type="number" placeholder="MinecraftCake">
+
+ 
+    
+    </details>
+   
+  
+    
+   <details>
+        
+        
+        <summary>Lolipops</summary>
+      
+           
+           <img src="http://i0.kym-cdn.com/photos/images/newsfeed/000/096/044/trollface.jpg?1296494117" alt="">
+ 
+   
+         
+  <img src="http://i0.kym-cdn.com/photos/images/newsfeed/000/096/044/trollface.jpg?1296494117" alt="">
+      
+ <img src="http://i0.kym-cdn.com/photos/images/newsfeed/000/096/044/trollface.jpg?1296494117" alt="">
+   <hr>
+  <input class="numberofitems" min=0 max=10 type="number" placeholder="Big">
+ <input class="numberofitems" min=0 max=10 type="number" placeholder="Medium">
+ <input class="numberofitems" min=0 max=10 type="number" placeholder="Small">
+
+ 
+ 
+    
+    </details>
+    
+    <details>
+        
+        
+        <summary>Ice Cream</summary>
+      
+           
+           <img src="http://i0.kym-cdn.com/photos/images/newsfeed/000/096/044/trollface.jpg?1296494117" alt="">
+ 
+   
+         
+  <img src="http://i0.kym-cdn.com/photos/images/newsfeed/000/096/044/trollface.jpg?1296494117" alt="">
+      
+ <img src="http://i0.kym-cdn.com/photos/images/newsfeed/000/096/044/trollface.jpg?1296494117" alt="">
+ 
+   <hr>
+   
+   
+ <input class="numberofitems" min=0 max=10 type="number" placeholder="Strawberry">
+ <input class="numberofitems" min=0 max=10 type="number" placeholder="Vanailla">
+ <input class="numberofitems" min=0 max=10 type="number" placeholder="Chocolate">
+ <hr>
+   <img src="http://i0.kym-cdn.com/photos/images/newsfeed/000/096/044/trollface.jpg?1296494117" alt="">
+ <hr>
+ <input class="numberofitems" min=0 max=10 type="number" placeholder="Mint">
+ 
+    
+    </details>
+    
+     </div>
+  </div>
+</div>      
+          
+      
+      
+      </div>
+    </li>
+           
+           
+           
+           <br>
+           <br>
+            
+              <input type="radio" name="payment"> Master
+    <input type="radio" name="payment"> Paypal
+    <input type="radio" name= "payment"> Visa   
+      <br>
+        <br>
+        Number of People      
+         <input id="range" min=1 max=10 type="range" value=1 onchange="whenChangeRange(this.value)">
+           <label id=rangevalue>1</label>  
+        </ul>
+    </nav>
+</header>
+    
+
+    
+    
+    
+ </fieldset>
+
+ <br><br>
+ <ul>
+ <h3>Your Feedback is important to us:</h3>
+ <textarea name="TextArea" id="textarea" cols="45" rows="10" placeholder="Your Feedback"></textarea>
+ 
+  <br>
+  <br>
+  <a id="EndButton"href="anyServerResource.php"><button>Submit</button></a>
+  
+   <a id="EndButton"href="order.html"><button>Reset</button></a>
+  <br>
+  <br>
+   </ul>
+     <script>
+    function whenChangeRange(val) {
+        var range=document.getElementById('rangevalue');
+      
+        range.innerHTML=val; 
+    }
+    </script>
+    </form>   
+</body>
+</html>
+
+
+
+
+

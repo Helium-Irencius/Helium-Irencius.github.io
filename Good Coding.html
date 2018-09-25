@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            height: 1000px;
+        }
+        
+        h1 {
+            color: black;
+            font-family: century gothic;
+            text-align: center;
+            padding-top: 90px;
+        }
+        
+        ul {
+            list-style-type: none;
+            background-color: dodgerblue;
+            box-shadow: 0px 0px 10px darkgray;
+            position: fixed;
+            height: 70px;
+            top: -2px;
+            width: 100%;
+        }
+        
+        li {
+            float: left;
+            height: 70px;
+        }
+        
+        .main {
+            font-size: 16px;
+            display: block;
+            color: white;
+            text-align: center;
+            padding-top: 20px;
+            padding-right: 30px;
+            padding-left: 30px;
+            text-decoration: none;
+            font-family: century gothic;
+            font-weight: lighter;
+        }
+        
+        li a:hover {
+            text-shadow: 0px 0px 10px;
+            background-color: skyblue;
+            height: 70px;
+        }
+        
+        ul::-webkit-scrollbar {
+            background-color: transparent;
+        }
+        
+         ::-webkit-scrollbar-thumb {
+            background-color: transparent;
+        }
+        
+        img {
+            width: 90px;
+        }
+        
+        #logo {
+            display: block;
+            padding-top: 20px;
+            padding-right: 30px;
+            padding-left: 30px;
+            position: absolute;
+            left: 75%;
+        }
+        
+        @media screen and (min-width: 1394px) {
+            .dropbtn {
+                position: relative;
+                bottom: 1000px;
+            }
+            .dropdown-content a {
+                display: none;
+            }
+        }
+        
+        @media screen and (max-width: 1393px) {
+            .main {
+                width: 0px;
+                height: 0px;
+                padding: 0;
+                margin: 0;
+                font-size: 0;
+            }
+            #menu {
+                width: 30px;
+                position: relative;
+                top: 1px;
+            }
+            .dropbtn {
+                border-radius: 200px;
+                position: fixed;
+                margin: 0;
+                top: 8px;
+                left: 25px;
+                background-color: transparent;
+                width: 50px;
+                height: 50px;
+                border-color: white;
+                z-index: 1;
+            }
+            .dropdown {
+                position: relative;
+                display: inline-block;
+                z-index: 1;
+            }
+            .dropdown-content {
+                display: none;
+                position: absolute;
+                top:43px;
+                z-index: 1;
+                min-width: 200px;
+                background-color: dodgerblue;
+                box-shadow: 0px 0px 5px grey;
+            }
+            .dropdown-content a {
+                color: white;
+                padding: 12px 16px;
+                text-decoration: none;
+                display: block;
+                z-index: 1;
+                font-family: century gothic;
+                
+            }
+            .dropdown:hover .dropbtn {
+                box-shadow: 0px 0px 30px white;
+            }
+            .dropdown:hover .dropdown-content {
+                display: block;
+                z-index: 1;
+                background-color: dodgerblue;
+                
+            }
+            #logo {
+                padding-top: 20;
+                padding-left: 20px;
+                padding-right: 20px;
+            }
+            .dropdown-content a:hover {
+                text-shadow: 0px 0px 20px dodgerblue;
+                background-color: skyblue;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="dropdown">
+        <button class="dropbtn"><img id="menu" src="https://image.flaticon.com/icons/png/512/56/56763.png" alt=""></button>
+        <div class="dropdown-content">
+            <a href="about.html">About Us</a>
+            <a href="pesreg.html">Pesticide Registration</a>
+            <a href="services.html">Services</a>
+            <a href="use.html">Useful Links</a>
+            <a href="team.html">Our Team</a>
+            <a href="contact.html">Contact Us</a>
+            <a href="mailto:hanshuyou@gmail.com">Submit an Inquery</a>
+        </div>
+    </div>
+
+    <ul>
+        <li><a class="main" href="about.html" target="_parent">About Us</a></li>
+        <li><a href="pesreg.html" class="main" target="_parent">Pesticide Registration</a></li>
+        <li><a class="main" href="services.html" target="_parent">Services</a></li>
+        <li><a class="main" href="use.html" target="_parent">Useful Links</a></li>
+        <li><a class="main" href="team.html" target="_parent">Our Team</a></li>
+        <li><a class="main" href="contact.html" target="_parent">Contact Us</a></li>
+        <li><a class="main" href="mailto:hanshuyou@gmail.com">Submit an Inquery</a></li>
+        <li>
+            <a href="hanson_consulting.html" target="_parent" id="logo"><img src="http://i.imgur.com/SdEKaKu.png" alt=""></a>
+
+        </li>
+    </ul>
+    <h1>Hanson Agrochemical Consulting</h1>
+
+</body>
+
+</html>
